@@ -1,46 +1,68 @@
-.top{
- background-color:black;
- overflow: hidden;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "SF Pro Display", sans-serif;
+    box-sizing: border-box;
+    
 }
-a{
+
+li,a,button{
+    font-weight: 700;
+    font-size: 16px;
     text-decoration: none;
+    color: #358cd8;
 }
-.top p{
-    text-align: center;
-    display: inline;
-    color:blue;
-    font-size: 25px;
-    padding-left: 25%;
-    font-family: monospace;
+
+.logo{
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 50px;
 }
-.top li a{
-    float: left;
- display: inline;
- color: #f2f2f2;
-text-align: center;
-padding: 14px 16px;
-font-size: 20px;
-font-family: monospace;
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 50px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgb(216 209 200 / 70%);
 }
-.top a:hover {
-    background-color:cyan;
-    color: black;
-  }
-  .top button{
-    display: inline;
-    color:#f2f2f2;
-    background-color:yellowgreen;
-    float: right;
-    font-size: 17px;
-    border: 2px solid black;
-    border-radius: 15px;
-    padding: 4px 20px;
-    font-family: monospace;
-  }
-  .top button:hover{
-    background-color:cyan;
-    color: black;
-  }
-  hr{
-    width: 100%;
-  }
+
+.nav__links{
+    list-style: none;
+    
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px ;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+   color: #042849;
+}
+
+button{
+    margin-left: 20px;
+    border: none;
+
+    padding: 9px 25px;
+    background-color: #204e77;
+    color: aliceblue;
+    border-radius: 16.5px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgb(216 209 200 / 70%);
+    transition: all 0.2s ease-in ;
+}
+
+button:hover{
+    background-color: #2575bb;
+}
+
+
