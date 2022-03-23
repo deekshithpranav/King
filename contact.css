@@ -1,0 +1,44 @@
+
+h2{
+ margin-left: 100px;
+}
+#fr{
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    display: inline-block;
+    width: fit-content;
+}
+#fr label{
+    font-family: monospace;
+    font-size: 15px;
+}
+#fr input{
+    display: flex;
+    justify-content:center;
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+}
+#fr #sub{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+#fr #ta{
+    height: 100px;
+    width: 300px;
+}
+#fr input:hover{
+    border:1px solid blue;
+}
+#fr #sub:hover{
+    background-color: chartreuse;
+    color: black;
+    border:1px solid black
+}
+.rq:after {
+    content:" *";
+    color: red;
+  }
