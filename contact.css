@@ -1,40 +1,67 @@
 
+body{
+
+ font-family: sans-serif;
+ background-color:#fff;
+}
 h2{
- margin-left: 100px;
+    color:black;
+    margin-left: 20px;
+}
+hr{
+    color:black;
 }
 #fr{
+    background-color: #f3e8e8;
     margin: 10px;
-    border: 2px solid black;
+    border: 2px solid #fff;
     border-radius: 5px;
     padding: 20px;
     display: inline-block;
-    width: fit-content;
+    width: 50%;
 }
 #fr label{
-    font-family: monospace;
     font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    font-size: medium;
+    padding-bottom: 8px;
 }
 #fr input{
     display: flex;
-    justify-content:center;
-    width: 250px;
-    height: 25px;
-    border-radius: 5px;
+    justify-content:flex-start;
+    width: 90%;
+    height: 2.5em;
+    border-radius: 2px;
+    color:#2c3345;
+    border: 1px solid #b8bdc9;
+    margin-left: 20px;
 }
 #fr #sub{
     width: 100px;
     height: 30px;
-    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    box-shadow: none;
+    margin-left: 20px;
+    border-radius: 16.5px;
+    background-color:rgb(216 209 200 );
 }
 #fr #ta{
-    height: 100px;
-    width: 300px;
+    row-gap: 1;
+    font-size:medium;
+    display:flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    width:70%;
+    height:10em;
+    font-family: sans-serif;
 }
 #fr input:hover{
     border:1px solid blue;
 }
 #fr #sub:hover{
-    background-color: chartreuse;
+    background-color: #8cbde7;
     color: black;
     border:1px solid black
 }
@@ -42,3 +69,46 @@ h2{
     content:" *";
     color: red;
   }
+  /* .foot{
+      display: flex;
+      justify-content: flex-start;
+      
+  }
+ul li{
+    list-style: none;
+    display: inline;
+    color: black;
+    padding:0px 190px;
+    font-size: 25px;
+    
+} */
+*{
+    font-family: sans-serif;
+}
+/* #mar{
+    
+    position: relative;
+    animation: move 1s infinite;
+   }
+   @keyframes move{
+       0%{top:0px;}
+       15%{top:8px;}
+       100%{top:0px;}
+   }  */
+   @media (max-width:500px) {
+    #fr #ta{
+        width:90%;
+        height: 7em;
+    }
+ #fr #ta,#fr input{
+     margin-left:1px;
+ }
+   }
+
+#map{
+    width:45%;
+    height:450px;
+    display: inline-block;
+    margin-bottom:120px;
+    margin-left: 5px;
+}
