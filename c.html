@@ -1,42 +1,57 @@
-
 <!DOCTYPE html>
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Contact us</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Contact us</title>
 </head>
+
 <body>
-    
-    <form  action="https://formspree.io/f/xyyopawv" method="POST"> 
-    
-        <h2>Contact Us</h2>
-        <div id="sample">
+  <header>
+    <a href="index.html" class="logo"> <img src="images/kingkavery.png" alt="King Kavery Logo"></a>
+    <nav>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+
+      </ul>
+    </nav>
+    <a href="c.html"><button class="cta">Contact</button></a>
+  </header>
+  <div class="submit-form">
+    <form action="https://formspree.io/f/xyyopawv" method="POST">
+
+      <h2>Contact Us</h2>
+      <div id="sample">
         <div id="fr">
-        <label for="name">Company Name</label>
-        <input type="text" id="name" placeholder="Enter Name" name="Comapny">
-        <br><br>
-        <label for="mail" class="rq">Mail Id</label>
-        <input type="email" id="mail" required placeholder="Enter Mail" name="Email">
-        <br><br>
-        <label for="ph">Contact Number</label>
-        <input type="text" id="ph" maxlength="10" placeholder="Enter Number" name="phone number">
-        <br><br>
-        <label for="ph">Your Requirements</label>
-        <textarea placeholder="" id="ta" name="requirements"></textarea>
-        <br><br>
-        <button type="submit" id="sub" >Submit <i class="fa fa-send"></i></button>
+          <label for="name">Company Name</label>
+          <input type="text" id="name" placeholder="Enter Name" name="Comapny">
+          <br><br>
+          <label for="mail" class="rq">Mail Id</label>
+          <input type="email" id="mail" required placeholder="Enter Mail" name="Email">
+          <br><br>
+          <label for="ph">Contact Number</label>
+          <input type="text" id="ph" maxlength="10" placeholder="Enter Number" name="phone number">
+          <br><br>
+          <label for="ph">Your Requirements</label>
+          <textarea placeholder="" id="ta" name="requirements"></textarea>
+          <br><br>
+          <button type="submit" id="sub">Submit <i class="fa fa-send"></i></button>
         </div>
         <div id="map"></div>
-        </div>
+      </div>
     </form>
-     <br>
-<script>
-    function initMap(){
-    
-        const uluru = { lat: 	12.709884, lng: 77.693352 };
+    <br>
+    <script>
+      function initMap() {
+
+        const uluru = { lat: 12.7786989, lng: 77.7968606 };
         // The map, centered at Uluru
         const map = new google.maps.Map(
           document.getElementById("map"),
@@ -45,18 +60,20 @@
             center: uluru,
           }
         );
-      
+
         // The marker, positioned at Uluru
         const marker = new google.maps.Marker({
           position: uluru,
           map: map,
         });
       }
-      </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA74kaSsJz0ZqJh1bqm8RW1iH3iZ93piBM&callback=initMap"></script>
-    
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA74kaSsJz0ZqJh1bqm8RW1iH3iZ93piBM&callback=initMap"></script>
 
-    <!-- <hr>
+  </div>
+
+  <!-- <hr>
     <div class="foot">
         <ul>
           
@@ -71,5 +88,7 @@
         </ul>
       
     </div>  -->
-  
+
 </body>
+
+</html>
