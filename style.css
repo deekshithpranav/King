@@ -17,13 +17,6 @@ li,a,button{
     color: #358cd8;
 }
 
-.logo{
-    height: 60px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin-right: auto;
-    margin-left: 50px;
-}
 
 header{
     display: flex;
@@ -32,6 +25,18 @@ header{
     padding: 0px 50px;
     background-color: #fff;
     box-shadow: 0 1px 3px rgb(216 209 200 / 70%);
+}
+
+.logo img{
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    
+}
+.logo{
+    margin-right: auto;
+    margin-left: 50px;
 }
 
 .nav__links{
@@ -52,7 +57,7 @@ header{
    color: #042849;
 }
 
-button{
+.cta{
     margin-left: 20px;
     border: none;
 
@@ -65,7 +70,7 @@ button{
     transition: all 0.2s ease-in ;
 }
 
-button:hover{
+.cta:hover{
     background-color: #2575bb;
 }
 
@@ -86,12 +91,17 @@ button:hover{
 }
 
 #heading1{
-  margin: 20px 0px 10px;transition: all 0.3s ease-out;
+  margin: 20px 0px 10px;
+  transition: all 1s ease-out;
 }
 
 #slogan{
-  display: inline-block;transition: all 0.3s ease-out;
-margin-bottom: 30px;
+  display: inline-block;
+  transition: all 0.3s ease-out;
+  margin-bottom: 30px;
 
 }
 
+.submit-form{
+    margin-top: 30px;
+}

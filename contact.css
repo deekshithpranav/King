@@ -19,6 +19,7 @@ hr{
     padding: 20px;
     display: inline-block;
     width: 50%;
+    margin-top: 20px;
 }
 #fr label{
     font-size: 15px;
@@ -36,16 +37,18 @@ hr{
     color:#2c3345;
     border: 1px solid #b8bdc9;
     margin-left: 20px;
+    padding-left: 10px;
 }
 #fr #sub{
-    width: 100px;
-    height: 30px;
+    width: 120px;
+    height: 40px;
     border: none;
     text-decoration: none;
     box-shadow: none;
     margin-left: 20px;
     border-radius: 16.5px;
     background-color:rgb(216 209 200 );
+    
 }
 #fr #ta{
     row-gap: 1;
@@ -53,17 +56,18 @@ hr{
     display:flex;
     justify-content: flex-start;
     margin-left: 20px;
-    width:70%;
+    width:90%;
     height:10em;
     font-family: sans-serif;
+    padding: 5px;
 }
 #fr input:hover{
     border:1px solid blue;
 }
 #fr #sub:hover{
-    background-color: #8cbde7;
+    background-color: #4090d6;
     color: black;
-    border:1px solid black
+   
 }
 .rq:after {
     content:" *";
@@ -106,9 +110,29 @@ ul li{
    }
 
 #map{
-    width:45%;
-    height:450px;
+    width:35%;
+    height:350px;
     display: inline-block;
-    margin-bottom:120px;
-    margin-left: 5px;
+    margin-bottom:210px;
+    margin-left: 10%;
 }
+
+@media (max-width:1090px){
+    #map{
+        margin-left: 2%;
+        width: 40%;
+    }
+}
+
+@media (max-width:783px){
+    #fr{
+        width: 95%;
+
+    }
+    #map{
+        margin-top: 30px;
+        width: 94%;
+        margin-left: 15px;
+    }
+}
+
