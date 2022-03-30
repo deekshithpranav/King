@@ -12,7 +12,7 @@ hr{
     color:black;
 }
 #fr{
-    background-color: #f3e8e8;
+    background-color: #d9e0f1;
     margin: 10px;
     border: 2px solid #fff;
     border-radius: 5px;
@@ -27,6 +27,7 @@ hr{
     justify-content: flex-start;
     font-size: medium;
     padding-bottom: 8px;
+    font-weight: 500;
 }
 #fr input{
     display: flex;
