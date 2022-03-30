@@ -111,19 +111,23 @@ header{
    .sm{
     display: none;
     position: absolute;
-    background-color: #fff;
+    background-color:#fff;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: auto;
-    width: 150px;
+    width: 185px;
     margin-top: 25px;
    }
   .m:hover .sm {
     display: block;
   }
   .sm  a{
-    color: black;
+    color:black;
     padding: 8px 10px;
     text-decoration: none;
     display:block;
-    color:#2575bb;
+  }
+  
+  .sm a:hover{
+      background-color:#358cd8;
+      color: #fff !important;
   }
