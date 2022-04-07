@@ -10,27 +10,33 @@
 
 <body>
     <header>
-        <a href="index.html" class="logo"> <img src="images/kingkavery.png" alt="King Kavery Logo"></a>
-        <nav>
-            <ul class="nav__links">
-                <li><a href="index.html">Home</a></li>
-                <li class="m">
-                    <a href="#" class="ho">Products &#9660;</a>
-                    <div class="sm">
-                        <a href="gases/Argon.html">Argon</a>
-                        <a href="gases/Carbon.html">Carbon Dioxide</a>
-                        <a href="gases/Dacetylene.html">Dissolved Acetylene</a>
-                        <a href="gases/Igas.html">Industrial Gas Mixtures</a>
-                        <a href="gases/oxygen.html">Medical and Industrial Oxygen</a>
-                        <a href="gases/nitrogen.html">Nitrogen Gas</a>
-                        <a href="gases/welding.html">Welding Wires</a>
-                    </div>
-                </li>
-                <li><a href="#">About</a></li>
+        <nav class="navbar">
+            <div class="branding">
+                <a href="index.html" class="logo"> <img src="images/kingkavery.png" alt="King Kavery Logo"></a>
+            </div>
+            <label for="input-hamburger" class="hamburger "></label>
+            <input type="checkbox" id="input-hamburger" hidden>
+            <ul class="menu">
+                <li><a href="#" class="menu-link">Home</a></li>
 
+                <li><a href="#" class="menu-link">About</a></li>
+                <li class="has-dropdown">
+                    <a href="#" class="menu-link">Products
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="gases/Argon.html">Argon</a></li>
+                        <li><a href="gases/Carbon.html">Carbon Dioxide</a></li>
+                        <li><a href="gases/Dacetylene.html">Dissolved Acetylene</a></li>
+                        <li><a href="gases/Igas.html">Industrial Gas Mixtures</a></li>
+                        <li><a href="gases/oxygen.html">Medical and Industrial Oxygen</a></li>
+                        <li><a href="gases/nitrogen.html">Nitrogen Gas</a></li>
+                        <li><a href="gases/welding.html">Welding Wires</a></li>
+                    </ul>
+                </li>
+                <li><a href="/c.html" class="contact menu-link">Contact</a></li>
             </ul>
         </nav>
-        <a href="c.html"><button class="cta">Contact</button></a>
     </header>
     <div id="main">
     </div>
@@ -40,6 +46,14 @@
             Powering The World.</span>
     </div>
     <div id="features"></div>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function () {
+            this.classList.toggle("close");
+        });
+
+    </script>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,52 +9,70 @@
     <link rel="stylesheet" href="../style.css">
     <title>Products</title>
 </head>
+
 <body>
     <header>
-        <a href="../index.html" class="logo"> <img src="../images/kingkavery.png" alt="King Kavery Logo"></a>
-        <nav>
-            <ul class="nav__links">
-                <li><a href="../index.html">Home</a></li>
-                <li class="m">
-                    <a href="#" class="ho">Products &#9660;</a>
-                    <div class="sm">
-                        <a href="Argon.html">Argon</a>
-                        <a href="Carbon.html">Carbon Dioxide</a>
-                        <a href="Dacetylene.html">Dissolved Acetylene</a>
-                        <a href="Igas.html">Industrial Gas Mixtures</a>
-                        <a href="oxygen.html">Medical and Industrial Oxygen</a>
-                        <a href="nitrogen.html">Nitrogen Gas</a>
-                        <a href="welding.html">Welding Wires</a>
-                    </div>
-                </li>
-                <li><a href="#">About</a></li>
+        <nav class="navbar">
+            <div class="branding">
+                <a href="../index.html" class="logo"> <img src="../images/kingkavery.png" alt="King Kavery Logo"></a>
+            </div>
+            <label for="input-hamburger" class="hamburger "></label>
+            <input type="checkbox" id="input-hamburger" hidden>
+            <ul class="menu">
+                <li><a href="#" class="menu-link">Home</a></li>
 
+                <li><a href="#" class="menu-link">About</a></li>
+                <li class="has-dropdown">
+                    <a href="#" class="menu-link">Products
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a href="/gases/Argon.html">Argon</a></li>
+                        <li><a href="/gases/Carbon.html">Carbon Dioxide</a></li>
+                        <li><a href="/gases/Dacetylene.html">Dissolved Acetylene</a></li>
+                        <li><a href="/gases/Igas.html">Industrial Gas Mixtures</a></li>
+                        <li><a href="/gases/oxygen.html">Medical and Industrial Oxygen</a></li>
+                        <li><a href="/gases/nitrogen.html">Nitrogen Gas</a></li>
+                        <li><a href="/gases/welding.html">Welding Wires</a></li>
+                    </ul>
+                </li>
+                <li><a href="../c.html" class="contact menu-link">Contact</a></li>
             </ul>
         </nav>
-        <a href="../c.html"><button class="cta">Contact</button></a>
     </header>
+
 
     <div class="heading">
         <a>INDUSTRIAL GAS MIXTURES</a>
     </div>
     <div class="info">
-        <div>Gas mixtures which are required for specific processes are normally chosen for their physical and chemical properties, rather than analytical accuracy of the mixture. Process mixtures are normally supplied uncertified. However, they are prepared with in the specified filling tolerances. Certificates of purity and levels of critical impurities are provided on request.</div>
+        <div>Gas mixtures which are required for specific processes are normally chosen for their physical and chemical
+            properties, rather than analytical accuracy of the mixture. Process mixtures are normally supplied
+            uncertified. However, they are prepared with in the specified filling tolerances. Certificates of purity and
+            levels of critical impurities are provided on request.</div>
 
-        <div>Gas mixtures which are required for specific processes are normally chosen for their physical and chemical properties, rather than analytical accuracy of the mixture. Process mixtures are normally supplied uncertified. However, they are prepared with in the specified filling tolerances. Certificates of purity and levels of critical impurities are provided on request.
+        <div>Gas mixtures which are required for specific processes are normally chosen for their physical and chemical
+            properties, rather than analytical accuracy of the mixture. Process mixtures are normally supplied
+            uncertified. However, they are prepared with in the specified filling tolerances. Certificates of purity and
+            levels of critical impurities are provided on request.
         </div>
-        <div>TRUAIR manufactures a wide range of gas mixtures with varying proportions to suit individual processes. These mixtures are to be used for process applications only and not for calibration of analyzers or other similar applications where the exact composition of the mixture is required. These mixtures are generally made out of two safe components in proportions ranging from 2 % to 98 %</div>
-     <br><br>
-   
-     <div class="shd"><i class="fa fa-star"></i>Some of the mixtures are (with different proportions or ratios)</div>
-     <!-- <div class="shd">Application</div> -->
-     <hr>
+        <div>TRUAIR manufactures a wide range of gas mixtures with varying proportions to suit individual processes.
+            These mixtures are to be used for process applications only and not for calibration of analyzers or other
+            similar applications where the exact composition of the mixture is required. These mixtures are generally
+            made out of two safe components in proportions ranging from 2 % to 98 %</div>
+        <br><br>
+
+        <div class="shd"><i class="fa fa-star"></i>Some of the mixtures are (with different proportions or ratios)</div>
+        <!-- <div class="shd">Application</div> -->
+        <hr>
         <div><span class="tick"><i class="fa fa-check"></i></span> ARGON + NITROGEN</div>
         <div><span class="tick"><i class="fa fa-check"></i></span> ARGON + HYDROGEN</div>
         <div><span class="tick"><i class="fa fa-check"></i></span> ARGON + CARBON DIOXIDE</div>
         <div><span class="tick"><i class="fa fa-check"></i></span> ARGON + OXYGEN</div>
         <div><span class="tick"><i class="fa fa-check"></i></span> ARGON + HELIUMN</div>
         <div><span class="tick"><i class="fa fa-check"></i></span> NITROGEN + HYDROGEN</div>
-        
+
     </div>
 </body>
+
 </html>
