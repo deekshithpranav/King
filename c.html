@@ -13,76 +13,82 @@
 
 <body>
   <header>
-    <a href="index.html" class="logo"> <img src="images/kingkavery.png" alt="King Kavery Logo"></a>
-    <nav>
-        <ul class="nav__links">
-            <li><a href="index.html">Home</a></li>
-            <li class="m">
-                <a href="#" class="ho">Products &#9660;</a>
-                <div class="sm">
-                  <a href="gases/Argon.html">Argon</a>
-                  <a href="gases/Carbon.html">Carbon Dioxide</a>
-                  <a href="gases/Dacetylene.html">Dissolved Acetylene</a>
-                  <a href="gases/Igas.html">Industrial Gas Mixtures</a>
-                  <a href="gases/oxygen.html">Medical and Industrial Oxygen</a>
-                  <a href="gases/nitrogen.html">Nitrogen Gas</a>
-                  <a href="gases/welding.html">Welding Wires</a>
-                </div>
-            </li>
-            <li><a href="#">About</a></li>
+    <nav class="navbar">
+      <div class="branding">
+        <a href="/index.html" class="logo"> <img src="images/kingkavery.png" alt="King Kavery Logo"></a>
+      </div>
+      <label for="input-hamburger" class="hamburger "></label>
+      <input type="checkbox" id="input-hamburger" hidden>
+      <ul class="menu">
+        <li><a href="#" class="menu-link">Home</a></li>
 
-        </ul>
+        <li><a href="#" class="menu-link">About</a></li>
+        <li class="has-dropdown">
+          <a href="#" class="menu-link">Products
+            <span class="arrow"></span>
+          </a>
+          <ul class="submenu">
+            <li><a href="gases/Argon.html">Argon</a></li>
+            <li><a href="gases/Carbon.html">Carbon Dioxide</a></li>
+            <li><a href="gases/Dacetylene.html">Dissolved Acetylene</a></li>
+            <li><a href="gases/Igas.html">Industrial Gas Mixtures</a></li>
+            <li><a href="gases/oxygen.html">Medical and Industrial Oxygen</a></li>
+            <li><a href="gases/nitrogen.html">Nitrogen Gas</a></li>
+            <li><a href="gases/welding.html">Welding Wires</a></li>
+          </ul>
+        </li>
+        <li><a href="c.html" class="contact menu-link">Contact</a></li>
+      </ul>
     </nav>
-    <a href="c.html"><button class="cta">Contact</button></a>
-</header>
+  </header>
 
-    <form action="https://formspree.io/f/xyyopawv" method="POST">
+  <form action="https://formspree.io/f/xyyopawv" method="POST">
 
-      <h2>Contact Us</h2>
-      
-        <div id="fr">
-          <label for="name">Company Name</label>
-          <input type="text" id="name" placeholder="Enter Name" name="Comapny">
-          <br><br>
-          <label for="mail" class="rq">Mail Id</label>
-          <input type="email" id="mail" required placeholder="Enter Mail" name="Email">
-          <br><br>
-          <label for="ph">Contact Number</label>
-          <input type="text" id="ph" maxlength="10" placeholder="Enter Number" name="phone number">
-          <br><br>
-          <label for="ph">Your Requirements</label>
-          <textarea placeholder="" id="ta" name="requirements"></textarea>
-          <br><br>
-          <button type="submit" id="sub">Submit <i class="fa fa-send"></i></button>
-        </div>
-        <div id="map"></div>
-    </form>
-    
-    <script>
-      function initMap() {
+    <h2>Contact Us</h2>
 
-        const uluru = { lat: 12.7786989, lng: 77.7968606 };
-        // The map, centered at Uluru
-        const map = new google.maps.Map(
-          document.getElementById("map"),
-          {
-            zoom: 4,
-            center: uluru,
-          }
-        );
+    <div id="fr">
+      <label for="name">Company Name</label>
+      <input type="text" id="name" placeholder="Enter Name" name="Comapny">
+      <br><br>
+      <label for="mail" class="rq">Mail Id</label>
+      <input type="email" id="mail" required placeholder="Enter Mail" name="Email">
+      <br><br>
+      <label for="ph">Contact Number</label>
+      <input type="text" id="ph" maxlength="10" placeholder="Enter Number" name="phone number">
+      <br><br>
+      <label for="ph">Your Requirements</label>
+      <textarea placeholder="" id="ta" name="requirements"></textarea>
+      <br><br>
+      <button type="submit" id="sub">Submit <i class="fa fa-send"></i></button>
+    </div>
+    <div id="map"></div>
+  </form>
 
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-        });
-      }
+  <script>
+    function initMap() {
+
+      const uluru = { lat: 12.7786989, lng: 77.7968606 };
+      // The map, centered at Uluru
+      const map = new google.maps.Map(
+        document.getElementById("map"),
+        {
+          zoom: 4,
+          center: uluru,
+        }
+      );
+
+      // The marker, positioned at Uluru
+      const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+      });
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA74kaSsJz0ZqJh1bqm8RW1iH3iZ93piBM&callback=initMap">
     </script>
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA74kaSsJz0ZqJh1bqm8RW1iH3iZ93piBM&callback=initMap">
-    </script>
 
-<br>
+  <br>
   <!-- <hr>
     <div class="foot">
         <ul>
