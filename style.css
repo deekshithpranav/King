@@ -21,7 +21,7 @@ body {
 header {
   background: rgb(252, 252, 252);
   padding-left: 1.5em;
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
 }
@@ -328,13 +328,13 @@ margin-bottom: 30px;
 width: 100%;
 height: 60px;
 background-color:#358cd8;
+text-align: center;
 }
 .heading a{
 margin-top: 10px;
 font-size: 26px;
 font-weight: 250;
 display: inline-block;
-padding-left: 100px;
 color:#fff;
 }
 .info{
@@ -388,7 +388,7 @@ height: 1px;
 }
 
 
-.heading a{
+/* .heading a{
      margin-top: 10px;
      font-size: 26px;
      font-weight: 500;
@@ -445,7 +445,7 @@ text-align: center;
      height: 1px;
      color:#666666;
      background-color: #666666;    
- }
+ } */
 
 
 .home-abt{
