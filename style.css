@@ -8,6 +8,7 @@
 
 body {
   height: 100vh;
+  background-color: #d6e5ff;
 }
 
 
@@ -316,6 +317,7 @@ header {
   width: 100%;
   height: 60px;
   background-color: #358cd8;
+  text-align: center;
 }
 
 .heading a {
@@ -323,7 +325,6 @@ header {
   font-size: 26px;
   font-weight: 250;
   display: inline-block;
-  padding-left: 100px;
   color: #fff;
 }
 
