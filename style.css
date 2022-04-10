@@ -193,6 +193,8 @@ header{
   .hamburger::before {
     content: "";
     position: absolute;
+    background: #fff;
+    top: 4.55em;
     left: 0;
     background: inherit;
     width: inherit;
@@ -246,6 +248,45 @@ header{
     box-shadow: 0 1px 3px rgb(216 209 200 / 70%);
     transition: all 0.2s ease-in ;
     border-radius: 3px;
+}
+
+  .close::after,
+  .close::before {
+    top: 0;
+    transition: 0.2s transform ease-in-out;
+  }
+  .close::before {
+    display: none;
+  }
+  .close {
+    transform: rotate(45deg);
+    transition: 0.2s transform ease-in-out;
+  }
+  .close::after {
+    transform: rotate(-90deg);
+  }
+
+  /* reveal menu */
+  input[type="checkbox"]:checked + .menu {
+    position: absolute;
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+
+ .contact{
+  background-color: #0d4c83;
+   color: #fff !important;
+   margin: 8px 50px 0 10px ;
+    border: none;
+
+    padding: 9px 25px !important;
+    background-color: #204e77;
+    color: aliceblue;
+    border-radius: 16.5px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgb(216 209 200 / 70%);
+    transition: all 0.2s ease-in ;
 }
 
 #main{
@@ -425,8 +466,8 @@ background-color: #b0cce4;
 }
 
 .home-abt .container .text{
-  width: 80%;
-  
+width: 80%;
+
 }
 
 .main-h{
@@ -454,35 +495,38 @@ background-color: #b0cce4;
   border-radius: 5%;
 }
 
-
 @media (max-width:900px){
-  .home-abt .container{
-      flex-direction: column;
-      
-  }
-  .home-abt .container .text{
-      width: 100%;
-  }
-  
-  .gasimg img{
-      height: auto;
-      width: auto;
-      max-width: 100%;
-      float: left;
-      
-      padding: 3% 5%;
-  }
-  
+.home-abt .container{
+    flex-direction: column;
+    
+}
+.home-abt .container .text{
+    width: 100%;
+    height: 60px;
+    background-color:#358cd8;
+     text-align:center;
+ }
+}
+ 
+
+.gasimg img{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    float: left;
+    
+    padding: 3% 5%;
 }
 
-@media (max-width:700px){
-  .gasimg img{
-      height: auto;
-      width: auto;
-      max-width: 100%;
-      float: left;
-      
-      padding: 5% 0;
-  }
 
+
+@media (max-width:700px){
+.gasimg img{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    float: left;
+    
+    padding: 5% 0;
+}
 }
