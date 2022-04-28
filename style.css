@@ -335,9 +335,9 @@ header {
 }
 
 .info div {
-  margin-top: 10px;
+  margin-top: 8.5px;
   padding-bottom: 15px;
-  max-width: 850px;
+  max-width: 90%;
   padding-left: 50px;
   line-height: 1.5;
 }
@@ -383,8 +383,65 @@ header {
   margin-left: 45px;
   height: 1px;
 }
-
-
+#ph{
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+}
+#im{
+  margin-top: 50px;
+  margin-right: 10px;
+}
+#im img{
+  width:100%;
+  border-radius: 10px;
+}
+@media (max-width:670px){
+  #ph{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+ .info{
+   margin-left:0 ;
+ }
+ #im img{
+  width:100%;
+}
+#im{
+  margin-left: 5%;
+}
+} 
+ @media (max-width:1000px){
+  #ph{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+ .info{
+   margin-left:0 ;
+ }
+ #im img{
+  width:80%;
+}
+}
+@media (max-width:990px){
+  #ph{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+ .info{
+   margin-left:0 ;
+ }
+ #im img{
+  width:80%;
+  align-items: center;
+  margin-left: 6%;
+}
+}
+/* about part home page*/
 .home-abt {
   margin-top: 40px;
   margin-left: 0.5%;
