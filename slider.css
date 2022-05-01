@@ -9,15 +9,15 @@
 
 .slider {
 
-    width: 1500px;
-    height: 600px;
-    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+
     overflow: hidden;
 }
 
 .slide {
     width: 500%;
-    height: 600px;
+    height: 100%;
     display: flex;
 }
 
@@ -31,21 +31,21 @@
 }
 
 .st img {
-    width: 1500px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
 }
 
 .nav-m {
     position: absolute;
     width: 99%;
-    margin-top: 500px;
+    margin-top: 10px;
     justify-content: center;
     display: flex;
 
 }
 
 .m-btn {
-    border: 2px solid #fff;
+    border: 2px solid #358cd8;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
