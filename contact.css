@@ -51,7 +51,7 @@ hr {
 }
 
 #fr #sub {
-    width: 120px;
+    width: 100px;
     height: 40px;
     border: none;
     text-decoration: none;
@@ -59,7 +59,7 @@ hr {
     margin-left: 20px;
     border-radius: 16.5px;
     background-color: whitesmoke;
-
+  padding-left: 0;
 }
 
 #fr #ta {
